@@ -1,0 +1,19 @@
+import
+
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+<div class="col">
+<dbz-list [characterList]="characters" (onDelete)="OnDeleteCharacter($event)">
+
+</dbz-list>
+
+
+</div>
+
+<div class="col">
+ <add-character (onNewCharacter)="onNewCharacter($event)"></add-character>
+
+</div>
+</div>
